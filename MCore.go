@@ -85,16 +85,16 @@ read:
 使用例子:
 
 1.获取正版登陆信息:
--mode login -u example@123.com -p password
+-m login -u example@123.com -p password
 在程序后面添加以上参数就会返回登陆密钥等信息，当然用户名和密码得替换成玩家的
 
 2.刷新密钥
--mode refresh -n Bluek404 -i 45Jd55w7dw3Gdwd -c wa6dDwdf556df -a Jdw534dwDHHdw2
+-m refresh -n Bluek404 -i 45Jd55w7dw3Gdwd -c wa6dDwdf556df -a Jdw534dwDHHdw2
 就会返回刷新的密钥等东西，不过用的人比较少所以这个功能未完善～
 就是说暂时不能用
 
 3.获取游戏列表信息
--mode luanch -l /home/bluek404/.minecraft
+-m launch -l /home/bluek404/.minecraft
 就是游戏的目录，记住一定要是绝对路径
 不懂啥叫绝对路径的请百度
 然后记得带上.minecraft文件夹
@@ -116,7 +116,7 @@ Lib文件路径什么的直接添加到启动命令就行鸟～
 		} else {
 			fmt.Println("缺少参数，无法运行。请使用参数 -h 来查看帮助")
 		}
-	case "luanch":
+	case "launch":
 		if location != "" {
 			for _, value := range luanch(location) {
 				fmt.Println(value["name"])
@@ -210,7 +210,7 @@ func refresh(accessToken_r, clientToken_r, id_r, name_r string) (accessToken, cl
 	return
 }
 
-func luanch(location string) (command []map[string]string) {
+func launch(location string) (command []map[string]string) {
 	launcher_profiles, _ := ioutil.ReadFile(location + "/launcher_profiles.json")
 	js, err := simplejson.NewJson(launcher_profiles) //解析json
 	if err != nil {
