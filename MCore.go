@@ -33,7 +33,7 @@ func main() {
 		mode        string
 		needHelp    bool
 	)
-	read:
+read:
 	for i, value := range os.Args {
 		//fmt.Println(i,value)
 		switch value {
@@ -53,7 +53,7 @@ func main() {
 		case "-i":
 			id = os.Args[i+1]
 		case "-l":
-			location = os.Args[i+1]
+			location = strings.Replace(os.Args[i+1], `"`, "", -1)
 		case "-m":
 			mode = os.Args[i+1]
 		}
