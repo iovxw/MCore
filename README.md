@@ -26,4 +26,4 @@ TODO
 下载
 ----
 
-[![Gobuild Download](http://beta.gobuild.io/badge/github.com/beego/bee/download.png)](http://beta.gobuild.io/github.com/beego/bee)
+[![Gobuild Download](http://beta.gobuild.io/badge/github.com/Bluek404/MCore/download.png)](http://beta.gobuild.io/github.com/Bluek404/MCore)
