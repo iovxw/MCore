@@ -5,6 +5,6 @@ Minecraft游戏启动核心，输入相应的参数会返回启动所需的参�
 
 目前填坑中
 
-![图](http://s29.postimg.org/mll8ytojp/Deepin_Screenshot20140621160133.png)
+![图](http://img3.tuchuang.org/uploads/2014/06/DeepinScreenshot20140621160133.png)
 
 
