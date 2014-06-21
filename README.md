@@ -8,7 +8,7 @@ Minecraft游戏启动核心，输入相应的参数会返回启动所需的参�
 ![图](http://img3.tuchuang.org/uploads/2014/06/DeepinScreenshot20140621160133.png)
 
 TODO
-====
+----
 
 好吧我知道有这个部分略坑爹
 
@@ -22,3 +22,8 @@ TODO
   4. 允许直接用启动核心启动游戏
   5. 允许更多的返回值
   6. More……
+
+下载
+----
+
+[![Gobuild Download](http://beta.gobuild.io/badge/github.com/beego/bee/download.png)](http://beta.gobuild.io/github.com/beego/bee)

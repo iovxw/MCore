@@ -118,18 +118,17 @@ Lib文件路径什么的直接添加到启动命令就行鸟～
 		}
 	case "luanch":
 		if location != "" {
-			luanch(location)
+			for _, value := range luanch(location) {
+				fmt.Println(value["name"])
+				fmt.Println(value["version"])
+				fmt.Println(value["lib"])
+			}
 		} else {
 			fmt.Println("缺少参数，无法运行。请使用参数 -h 来查看帮助")
 		}
 	default:
 		fmt.Println("运行模式错误！请使用参数 -h 来查看帮助")
 	}
-	//for _, value := range luanch("/home/bluek404/.minecraft") {
-	//	fmt.Println(value["name"])
-	//	fmt.Println(value["version"])
-	//	fmt.Println(value["lib"])
-	//}
 }
 
 func authenticate(name_l, password, clientToken_l string) (name, id, accessToken, clientToken string, badlogin bool) {
